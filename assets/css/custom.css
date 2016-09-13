@@ -14,3 +14,19 @@
 .anchor {
   cursor: pointer;
 }
+
+ul.normal {
+  margin: 0;
+  padding-left: 10px;
+}
+
+ul.dashed {
+  margin: 0;
+  padding: 0px;
+  list-style-type: none;
+  text-indent: -5px;
+}
+ul.dashed > li:before {
+  content: "- ";
+  text-indent: -10px;
+}
