@@ -2,3 +2,15 @@
     width: 120px;
     height: 120px;
 }
+
+.panel-block{
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.anchor {
+  cursor: pointer;
+}
