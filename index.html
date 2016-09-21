@@ -17,6 +17,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-image-gallery.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/blueimp-gallery.min.css">
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
 
@@ -34,6 +36,39 @@
 </head>
 
 <body>
+    <div id="blueimp-gallery" class="blueimp-gallery">
+     <!-- The container for the modal slides -->
+     <div class="slides"></div>
+     <!-- Controls for the borderless lightbox -->
+     <h3 class="title"></h3>
+     <a class="prev">‹</a>
+     <a class="next">›</a>
+     <a class="close">×</a>
+     <a class="play-pause"></a>
+     <ol class="indicator"></ol>
+     <!-- The modal dialog, which will be used to wrap the lightbox content -->
+     <div class="modal fade">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <button type="button" class="close" aria-hidden="true">&times;</button>
+                     <h4 class="modal-title"></h4>
+                 </div>
+                 <div class="modal-body next"></div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-default pull-left prev">
+                         <i class="glyphicon glyphicon-chevron-left"></i>
+                         Previous
+                     </button>
+                     <button type="button" class="btn btn-primary next">
+                         Next
+                         <i class="glyphicon glyphicon-chevron-right"></i>
+                     </button>
+                 </div>
+             </div>
+         </div>
+     </div>
+   </div>
     <div class="wrapper">
         <div class="sidebar-wrapper">
             <div class="profile-container">
@@ -298,7 +333,6 @@
 
 
             </section><!--//section-->
-
             <section class="section projects-section">
                 <h2 class="section-title"><i class="fa fa-archive"></i>참여 프로젝트</h2>
                 <div class="intro">
@@ -344,10 +378,16 @@
                                 <ul class="normal">
                                   <li>jQuery 및 Bootstrap 기반의 모바일 화면을 고려한 화면 설계</li>
                                 </ul>
-                                <div>
-                                  <img class="project-img" src="assets/project-imgs/wcpos-01.png">
-                                  <img class="project-img" src="assets/project-imgs/wcpos-02.png">
-                                  <img class="project-img" src="assets/project-imgs/wcpos-03.png">
+                                <div id="links">
+                                    <a href="assets/project-imgs/wcpos-01.png" title="WCPOS-01" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/wcpos-01.png">
+                                    </a>
+                                    <a href="assets/project-imgs/wcpos-02.png" title="WCPOS-02" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/wcpos-02.png">
+                                    </a>
+                                    <a href="assets/project-imgs/wcpos-03.png" title="WCPOS-03" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/wcpos-03.png">
+                                    </a>
                                 </div>
                               </div>
                             </div>
@@ -421,9 +461,13 @@
                                 <ul class="normal">
                                   <li>jQuery 및 Bootstrap 기반의 모바일 화면을 고려한 화면 설계</li>
                                 </ul>
-                                <div>
-                                  <img class="project-img" src="assets/project-imgs/antiphisto-01.png">
-                                  <img class="project-img" src="assets/project-imgs/antiphisto-02.png">
+                                <div id="links">
+                                    <a href="assets/project-imgs/antiphisto-01.png" title="antiphisto-01" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/antiphisto-01.png">
+                                    </a>
+                                    <a href="assets/project-imgs/antiphisto-02.png" title="antiphisto-02" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/antiphisto-02.png">
+                                    </a>
                                 </div>
                               </div>
                             </div>
@@ -503,9 +547,13 @@
                                 <ul class="normal">
                                   <li>Swing 기반의 Java UI를 제공</li>
                                 </ul>
-                                <div>
-                                  <img class="project-img" src="assets/project-imgs/sink_autotester-01.png">
-                                  <img class="project-img" src="assets/project-imgs/sink_autotester-02.png">
+                                <div id="links">
+                                    <a href="assets/project-imgs/sink_autotester-01.png" title="sink_autotester-01" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/sink_autotester-01.png">
+                                    </a>
+                                    <a href="assets/project-imgs/sink_autotester-02.png" title="sink_autotester-02" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/sink_autotester-02.png">
+                                    </a>
                                 </div>
                               </div>
                             </div>
@@ -581,9 +629,13 @@
                                 <ul class="normal">
                                   <li>이클립스 플러그인 형태의 통합 테스트 환경 제공</li>
                                 </ul>
-                                <div>
-                                  <img class="project-img" src="assets/project-imgs/acsf-01.png">
-                                  <img class="project-img" src="assets/project-imgs/acsf-02.png">
+                                <div id="links">
+                                    <a href="assets/project-imgs/acsf-01.png" title="acsf-01" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/acsf-01.png">
+                                    </a>
+                                    <a href="assets/project-imgs/acsf-02.png" title="acsf-02" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/acsf-02.png">
+                                    </a>
                                 </div>
                               </div>
                             </div>
@@ -656,10 +708,12 @@
                                 <ul class="normal">
                                   <li>안드로이드 기계에 적합한 네이티브 UI 사용</li>
                                 </ul>
-
-                                <div>
-                                  <img class="project-img" src="assets/project-imgs/kulife-01.png">
+                                <div id="links">
+                                    <a href="assets/project-imgs/kulife-01.png" title="kulife-01" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/kulife-01.png">
+                                    </a>
                                 </div>
+
                               </div>
                             </div>
                             <div class="panel panel-default">
@@ -714,10 +768,16 @@
                                     <li>게임 앱에서 이벤트 성 문자 발송 기능으로 활용</li>
                                   </ul>
                                 </ul>
-                                <div>
-                                  <img class="project-img" src="assets/project-imgs/adlib-01.png">
-                                  <img class="project-img" src="assets/project-imgs/adlib-02.png">
-                                  <img class="project-img" src="assets/project-imgs/adlib-03.png">
+                                <div id="links">
+                                    <a href="assets/project-imgs/adlib-01.png" title="adlib-01" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/adlib-01.png">
+                                    </a>
+                                    <a href="assets/project-imgs/adlib-02.png" title="adlib-02" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/adlib-02.png">
+                                    </a>
+                                    <a href="assets/project-imgs/adlib-03.png" title="adlib-03" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/adlib-03.png">
+                                    </a>
                                 </div>
                                 <div>사용 기술 : Java / Android SDK</div>
                               </div>
@@ -735,11 +795,14 @@
                                     <li>AbsoluteConsistency / Frequent state regeneration / Dead-reckoning</li>
                                   </ul>
                                 </ul>
-                                <div>
-                                  <img class="project-img" src="assets/project-imgs/miniNVE-01.png">
-                                  <img class="project-img" src="assets/project-imgs/miniNVE-02.png">
+                                <div id="links">
+                                    <a href="assets/project-imgs/miniNVE-01.png" title="miniNVE-01" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/miniNVE-01.png">
+                                    </a>
+                                    <a href="assets/project-imgs/miniNVE-02.png" title="miniNVE-02" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/miniNVE-02.png">
+                                    </a>
                                 </div>
-                                <div></div>
                                 <div>사용 기술 : C#</div>
                               </div>
                             </div>
@@ -772,12 +835,17 @@
                                     <li>시스템의 상태를 감시하는 Objerver를 2중으로 구성하여 시스템 상태 모니터링의 한계점을 보완함</li>
                                   </ul>
                                 </ul>
-                                <div>
-                                  <img class="project-img" src="assets/project-imgs/rds-01.png">
-                                  <img class="project-img" src="assets/project-imgs/rds-02.png">
-                                  <img class="project-img" src="assets/project-imgs/rds-03.png">
+                                <div id="links">
+                                    <a href="assets/project-imgs/rds-01.png" title="rds-01" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/rds-01.png">
+                                    </a>
+                                    <a href="assets/project-imgs/rds-02.png" title="rds-02" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/rds-02.png">
+                                    </a>
+                                    <a href="assets/project-imgs/rds-03.png" title="rds-03" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/rds-03.png">
+                                    </a>
                                 </div>
-
                                 <div>사용 기술 : Java / JAXB</div>
                               </div>
                             </div>
@@ -794,9 +862,14 @@
                                     <li>저장된 XML을 블로그에 출판하거나 PDF, Word, Excel 파일로 변환 할 수 있는 기능을 제공</li>
                                   </ul>
                                 </ul>
-                                <div>
-                                  <img class="project-img" src="assets/project-imgs/tweetdata-01.png">
-                                  <img class="project-img" src="assets/project-imgs/tweetdata-02.png">
+                                <div id="links">
+                                    <a href="assets/project-imgs/tweetdata-01.png" title="tweetdata-01" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/tweetdata-01.png">
+                                    </a>
+                                    <a href="assets/project-imgs/tweetdata-02.png" title="tweetdata-02" data-gallery>
+                                        <img class="project-img" src="assets/project-imgs/tweetdata-02.png">
+                                    </a>
+
                                 </div>
 
                                 <div>사용 기술 : Java / JAXB</div>
@@ -1205,6 +1278,8 @@
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap-tooltip.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap-popover.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/blueimp-gallery.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/jquery.blueimp-gallery.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
