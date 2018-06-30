@@ -194,3 +194,133 @@ ul.dashed > li:before {
   width: 150px;
   border:1px silver solid;
 }
+
+.header-wrapper {
+  background: #42A8C0;
+  height: 100%;
+  min-height: 274px;
+  color: #fff;
+}
+.header-wrapper a {
+  color: #fff;
+}
+.header-wrapper .profile-container {
+  position: absolute;
+  left: 0;
+  width: 240px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+}
+.header-wrapper .name {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.header-wrapper .tagline {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header-wrapper .profile {
+  margin-bottom: 15px;
+}
+.header-wrapper .contact-list .fa {
+  margin-right: 5px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.header-wrapper .contact-list li {
+  margin-bottom: 15px;
+}
+.header-wrapper .contact-list li:last-child {
+  margin-bottom: 0;
+}
+.header-wrapper .contact-list .email .fa {
+  font-size: 14px;
+}
+.header-wrapper .container-block {
+  left: 240px;
+  position: absolute;
+  padding: 30px;
+}
+.header-wrapper .container-block-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.header-wrapper .degree {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.header-wrapper .education-container .item {
+  margin-bottom: 15px;
+}
+.header-wrapper .education-container .item:last-child {
+  margin-bottom: 0;
+}
+.header-wrapper .education-container .meta {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+.header-wrapper .education-container .time {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.header-wrapper .languages-container .lang-desc {
+  color: rgba(255, 255, 255, 0.6);
+}
+.header-wrapper .languages-list {
+  margin-bottom: 0;
+}
+.header-wrapper .languages-list li {
+  margin-bottom: 10px;
+}
+.header-wrapper .languages-list li:last-child {
+  margin-bottom: 0;
+}
+.header-wrapper .interests-list {
+  margin-bottom: 0;
+}
+.header-wrapper .interests-list li {
+  margin-bottom: 10px;
+}
+.header-wrapper .interests-list li:last-child {
+  margin-bottom: 0;
+}
+
+.experiences-wrapper .upper-row {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.experiences-wrapper .job-title {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.experiences-wrapper .experiences-time {
+  float:left;
+  top: 0;
+  width: 250px;
+  color: #97AAC3;
+}
+.experiences-wrapper .company {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
