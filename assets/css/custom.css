@@ -1,0 +1,326 @@
+.img-profile {
+    width: 120px;
+    height: 120px;
+}
+
+.panel-block{
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.anchor {
+  cursor: pointer;
+}
+
+ul.normal {
+  margin: 0;
+  padding-left: 10px;
+}
+
+ul.dashed {
+  margin: 0;
+  padding: 0px;
+  list-style-type: none;
+  text-indent: -5px;
+}
+ul.dashed > li:before {
+  content: "- ";
+  text-indent: -10px;
+}
+.top-buffer {
+   margin-top:10px;
+ }
+ .right-buffer {
+    margin-right:10px;
+  }
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1010;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  text-align: left;
+  color:black;
+  white-space: normal;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+.popover.top {
+  margin-top: -10px;
+}
+
+.popover.right {
+  margin-left: 10px;
+}
+
+.popover.bottom {
+  margin-top: 10px;
+}
+
+.popover.left {
+  margin-left: -10px;
+}
+
+.popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  -webkit-border-radius: 5px 5px 0 0;
+     -moz-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
+}
+
+.popover-title:empty {
+  display: none;
+}
+
+.popover-content {
+  padding: 9px 14px;
+}
+
+.popover .arrow,
+.popover .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.popover .arrow {
+  border-width: 11px;
+}
+
+.popover .arrow:after {
+  border-width: 10px;
+  content: "";
+}
+
+.popover.top .arrow {
+  bottom: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-color: #999;
+  border-top-color: rgba(0, 0, 0, 0.25);
+  border-bottom-width: 0;
+}
+
+.popover.top .arrow:after {
+  bottom: 1px;
+  margin-left: -10px;
+  border-top-color: #ffffff;
+  border-bottom-width: 0;
+}
+
+.popover.right .arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-right-color: #999;
+  border-right-color: rgba(0, 0, 0, 0.25);
+  border-left-width: 0;
+}
+
+.popover.right .arrow:after {
+  bottom: -10px;
+  left: 1px;
+  border-right-color: #ffffff;
+  border-left-width: 0;
+}
+
+.popover.bottom .arrow {
+  top: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-top-width: 0;
+}
+
+.popover.bottom .arrow:after {
+  top: 1px;
+  margin-left: -10px;
+  border-bottom-color: #ffffff;
+  border-top-width: 0;
+}
+
+.popover.left .arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-left-color: #999;
+  border-left-color: rgba(0, 0, 0, 0.25);
+  border-right-width: 0;
+}
+
+.popover.left .arrow:after {
+  right: 1px;
+  bottom: -10px;
+  border-left-color: #ffffff;
+  border-right-width: 0;
+}
+
+.black {
+  color:black;
+}
+
+.black  a {
+  color: gray;
+}
+
+.project-img {
+  width: 150px;
+  border:1px silver solid;
+}
+
+.header-wrapper {
+  background: #42A8C0;
+  height: 100%;
+  min-height: 274px;
+  color: #fff;
+}
+.header-wrapper a {
+  color: #fff;
+}
+.header-wrapper .profile-container {
+  position: absolute;
+  left: 0;
+  width: 240px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+}
+.header-wrapper .name {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.header-wrapper .tagline {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header-wrapper .profile {
+  margin-bottom: 15px;
+}
+.header-wrapper .contact-list .fa {
+  margin-right: 5px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.header-wrapper .contact-list li {
+  margin-bottom: 15px;
+}
+.header-wrapper .contact-list li:last-child {
+  margin-bottom: 0;
+}
+.header-wrapper .contact-list .email .fa {
+  font-size: 14px;
+}
+.header-wrapper .container-block {
+  left: 240px;
+  position: absolute;
+  padding: 30px;
+}
+.header-wrapper .container-block-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.header-wrapper .degree {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.header-wrapper .education-container .item {
+  margin-bottom: 15px;
+}
+.header-wrapper .education-container .item:last-child {
+  margin-bottom: 0;
+}
+.header-wrapper .education-container .meta {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+.header-wrapper .education-container .time {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.header-wrapper .languages-container .lang-desc {
+  color: rgba(255, 255, 255, 0.6);
+}
+.header-wrapper .languages-list {
+  margin-bottom: 0;
+}
+.header-wrapper .languages-list li {
+  margin-bottom: 10px;
+}
+.header-wrapper .languages-list li:last-child {
+  margin-bottom: 0;
+}
+.header-wrapper .interests-list {
+  margin-bottom: 0;
+}
+.header-wrapper .interests-list li {
+  margin-bottom: 10px;
+}
+.header-wrapper .interests-list li:last-child {
+  margin-bottom: 0;
+}
+
+.experiences-wrapper .upper-row {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.experiences-wrapper .job-title {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.experiences-wrapper .experiences-time {
+  float:left;
+  top: 0;
+  width: 250px;
+  color: #97AAC3;
+}
+.experiences-wrapper .company {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
